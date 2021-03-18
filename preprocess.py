@@ -1,16 +1,57 @@
+from Load import json_to_df
+from nltk.corpus import stopwords
 import numpy as np
+import string
+import nltk
+nltk.download('stopwords')
+stopwords = stopwords.words('english')+list(string.punctuation)
 
-def tokenizer(df, include_summary=False):
+def remove_stopwords(text):
+    '''
+    Input: A list of strings.
+    Output: A list of strings.
+    '''
+    return [word for word in text if word not in stopwords]
+
+
+def tokenize(text):
     '''
     Input: 
-        - DataFrame.
+        - A string.
     Output:
-        - A list of lists of tokens.
+        - A list of tokens.
+    '''
+
+    return text.split(" ")
+
+
+def preprocessor(text, settings=None):
+    '''
+    Input: A string.
+    Output: A list of tokens.
+    '''
+    text = tokenize(text)
+
+    if settings['remove_stopwords']:
+        text = remove_stopwords(text)
+
+    return text
+
+
+def transform(df, settings, preprocessor=preprocessor):
+    '''A series of transformations on the df.
+    Input: 
+        - df: DataFrame.
+        - settings: dictionary.
+        - preprocessor: function.
+    Output: X: List of lists of tokens, y: list.
     '''
     df = df.replace(np.nan, '', regex=True)
-    if include_summary:
-        df['reviewText'] = df.reviewText +  " " + df.summary
-    
-    reviews = [[word for word in sentence.split(" ")] for sentence in df.reviewText if len(sentence) > 1]
-    
-    return reviews
+
+    if settings['include_summary']:
+        df['reviewText'] = df.reviewText + ' ' + df.summary
+    y = df.sentiment.tolist()
+    X = [preprocessor(string, settings)
+         for string in df['reviewText'].values if len(string) > 2]
+
+    return X, y
