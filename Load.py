@@ -7,5 +7,4 @@ def compressed_json_to_df(path):
 
 def json_to_df(path):
     data = [json.loads(line) for line in open(path)]
-    return pd.DataFrame(data)
-	
+    return pd.json_normalize(data)
