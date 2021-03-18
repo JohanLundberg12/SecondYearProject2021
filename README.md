@@ -12,4 +12,4 @@
 
 ## Ideas
 
-- We could include summary as part of the reviewText
+- We could include summary as part of the reviewText(combine them into one long string)
