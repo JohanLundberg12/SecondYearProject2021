@@ -8,3 +8,8 @@
 - Extract sentiment column: takes a DataFrame column and returns a list of strings, each string is the sentiment. 
 - Split methods(K-Fold) or train_test_split
 - Base Line Models: Unigram, Bigram, trigram models, NB or FeedForward Neural Network (FFNN(will need embeddings for this)
+
+
+## Ideas
+
+- We could include summary as part of the reviewText
