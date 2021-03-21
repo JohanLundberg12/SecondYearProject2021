@@ -1,9 +1,6 @@
-from Load import json_to_df
-from nltk.corpus import stopwords
 import numpy as np
 import string
-import nltk
-nltk.download('stopwords')
+from nltk.corpus import stopwords
 stopwords = stopwords.words('english')+list(string.punctuation)
 
 def remove_stopwords(text):
@@ -51,7 +48,7 @@ def transform(df, settings, preprocessor=preprocessor):
     if settings['include_summary']:
         df['reviewText'] = df.reviewText + ' ' + df.summary
     y = df.sentiment.tolist()
-    X = [preprocessor(string, settings)
-         for string in df['reviewText'].values if len(string) > 2]
+    data = [(preprocessor(string, settings), y) for string, y in zip(df['reviewText'].values, y) if len(string) > 1]
+    X, y = zip(*data)
 
     return X, y
