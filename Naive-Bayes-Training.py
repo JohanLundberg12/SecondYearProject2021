@@ -19,7 +19,6 @@ test_features = [bag_of_features(sentence, settings) for sentence in X_dev]
 
 
 NB = NaiveBayes()
-print(NB.parameters)
 w = NB.fit(train_features, y_train)
 preds = NB.predict(test_features, w)
 print(NB.evaluate(y_dev, preds))
