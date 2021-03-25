@@ -2,8 +2,8 @@
 
 
 ## Phase 2:
-- Make sure labes should be correct
-- Make sure samples are motivated explainable
+- Make sure labes are correct
+- Make sure samples are motivated and explainable
 - checklist code, code yourself, manual generation
 - data format should be in the same format as the original training data
 - present generated samples april 13-15
