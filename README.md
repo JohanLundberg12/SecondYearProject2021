@@ -11,7 +11,7 @@
 
 ## Ideas
 - Come up with something that is difficult where the system breaks down.
-- Negations, pertubation, directional expectation
+- Negations, pertubation
 
 
 
