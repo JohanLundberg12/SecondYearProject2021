@@ -48,7 +48,7 @@ def transform(df, settings, preprocessor=preprocessor):
     if settings['include_summary']:
         df['reviewText'] = df.reviewText + ' ' + df.summary
     y = df.sentiment.tolist()
-    data = [(preprocessor(string, settings), y) for string, y in zip(df['reviewText'].values, y) if len(string) > 1]
+    data = [(preprocessor(string, settings), y) for string, y in zip(df['reviewText'].values, y)]
     X, y = zip(*data)
 
     return X, y
