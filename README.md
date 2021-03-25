@@ -1,11 +1,17 @@
 # SecondYearProject2021
 
-## Todo
 
+## Phase 2:
+- Make sure labes should be correct
+- Make sure samples are motivated explainable
+- checklist code, code yourself, manual generation
+- data format should be in the same format as the original training data
+- present generated samples april 13-15
 
 
 ## Ideas
-
+- Come up with something that is difficult where the system breaks down.
+- Negations, pertubation, directional expectation
 
 
 
