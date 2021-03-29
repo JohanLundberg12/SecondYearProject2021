@@ -1,0 +1,31 @@
+reviewText,sentiment
+This is not a bad taste.,postive
+This is not a terrible experience.,positive
+This is not a terrible list.,positive
+This is not an awful mistake.,positive
+This is not a great performance.,negative
+This is not a terrible song.,positive
+This is not a terrible choice.,positive
+This is not a terrible tragedy.,positive
+This is not a great one.,negative
+This is not a bad surprise.,positive
+eerie,negative
+regret,negative
+dread,negative
+It is an odd music,negative
+We regret the singer,negative
+I like this instrument,positive
+That artist was eerie,negative
+We regret the sound.,negative
+I despise that tune.,negative
+I abhorred that tune.,negative
+I admire this cd, even though in the past I would despise it.,positive
+I admire this album, even though I used to despise it.,positive
+I think this album is nice, even though in the past I thought it was odd.,positive
+I think this cd is eerie,  I used to think it was excellent.,negative
+I dislike this album, although in the past I would appreciate it.,negative
+I used to think this album was extraordinary, even though now I think it is eerie.,negative
+I hate this album, although I used to love it.,negative
+I despise this album, although I used to love it.,negative
+I used to abhor this music, even though now I admire it.,positive
+I used to think this album was nice, but now I think it is eerie.,negative
