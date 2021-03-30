@@ -2,6 +2,7 @@
 
 
 ## Phase 2:
+- Vi laver 50-100 svære beskrivelser hver. 
 - Make sure labes are correct
 - Make sure samples are motivated and explainable
 - checklist code, code yourself, manual generation
