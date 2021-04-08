@@ -2,11 +2,6 @@
 
 
 ## Phase 2:
-- Vi laver 50-100 svære beskrivelser hver. 
-- Make sure labes are correct
-- Make sure samples are motivated and explainable
-- checklist code, code yourself, manual generation
-- data format should be in the same format as the original training data
 - present generated samples april 13-15
 
 ### CheckList Process Test Types
@@ -21,12 +16,14 @@
 - Semantic Role Labeling (SRL): understanding roles such as agent, object, passive/active, etc (MFT)
 - Logic: symmetry, consistency, conjunctions, disjunctions, etc (INV)
 
-
-## Ideas
-- Come up with something that is difficult where the system breaks down.
-- Negations, pertubation
-
-
+## Phase 3:
+### Possible topics
+  - Data Augmentation: Papers: []
+  - Data Generation for better Error Analysis: Papers: []
+  - Domain Shift: Papers: [] 
+  - Human Performance: Papers: []
+  - Linguistic Features: Papers: []
+  - Syntactic Information: Papers: []
 
 ## Link to baseline description
 
