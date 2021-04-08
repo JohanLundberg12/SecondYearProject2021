@@ -17,7 +17,7 @@
 - Logic: symmetry, consistency, conjunctions, disjunctions, etc (INV)
 
 ## Phase 3:
-### Possible topics
+### Ideas for Possible topics
   - Data Augmentation: Papers: []
   - Data Generation for better Error Analysis: Papers: []
   - Domain Shift: Papers: [] 
