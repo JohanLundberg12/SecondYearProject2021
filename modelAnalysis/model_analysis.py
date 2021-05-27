@@ -36,17 +36,12 @@ box_plot(correct_df, name=f'{model_name} Correct')
 box_plot(incorrect_df, name=f'{model_name} Incorrect')
 
 if check_listing:
-    casetypes_dfs = []
     casetype_model = partial(score_model, model)
 
     for casetype in casetypes:
         casetype_df = get_casetype(df, casetype)
-        #casetypes_dfs.append(casetype_df)
         print(f"{model}, {casetype}: ", casetype_model(casetype_df))
-        box_plot(casetype_df, name=f'{casetype}') #maybe also do boxplots per casetype per correct_df, incorrect_df
 
-        term_freq_df = create_term_freq_df(casetype_df)
-        create_term_freq_df_plots(term_freq_df, name=casetype, folder_name=f'{model_name}')
 
 
     
